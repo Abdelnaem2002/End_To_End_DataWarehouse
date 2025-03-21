@@ -1,0 +1,2724 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelSharedDimensions.true...ObjectModelSharedDimensions />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Book1_17426053906650' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Data Model' inline='true' name='federated.0iwao7s1lpxsi11fx12cv05erlub' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='DIM_CUSTOMER' name='textscan.0yd4iz81o6s7vm1eli1s9195tnk7'>
+            <connection class='textscan' directory='C:/Users/DELL/Desktop/sql-data-warehouse-project/reporting' filename='DIM_CUSTOMER.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='DIM_DATE' name='textscan.0c6hds814618jp1bfjmqa0er7635'>
+            <connection class='textscan' directory='C:/Users/DELL/Desktop/sql-data-warehouse-project/reporting' filename='DIM_DATE.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='DIM_PRODUCT' name='textscan.1jtllgy1l78wow1ff573t0igst7x'>
+            <connection class='textscan' directory='C:/Users/DELL/Desktop/sql-data-warehouse-project/reporting' filename='DIM_PRODUCT.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+          <named-connection caption='FACT_SALES' name='textscan.1evpt9c1tj56zc1gi4nmr0ijhfog'>
+            <connection class='textscan' directory='C:/Users/DELL/Desktop/sql-data-warehouse-project/reporting' filename='FACT_SALES.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0yd4iz81o6s7vm1eli1s9195tnk7' name='DIM_CUSTOMER.csv' table='[DIM_CUSTOMER#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Quarter' ordinal='1' />
+            <column datatype='string' name='Month' ordinal='2' />
+            <column datatype='integer' name='Day' ordinal='3' />
+            <column datatype='string' name='COUNTRY' ordinal='4' />
+            <column datatype='integer' name='CUSTOMER_ID' ordinal='5' />
+            <column datatype='string' name='CUSTOMER_UNIQUE_KEY' ordinal='6' />
+            <column datatype='integer' name='Female %' ordinal='7' />
+            <column datatype='string' name='Full Name' ordinal='8' />
+            <column datatype='string' name='FIRST_NAME' ordinal='9' />
+            <column datatype='string' name='GENDER' ordinal='10' />
+            <column datatype='string' name='LAST_NAME' ordinal='11' />
+            <column datatype='integer' name='Male %' ordinal='12' />
+            <column datatype='integer' name='profit' ordinal='13' />
+            <column datatype='integer' name='Repeat Purchase Rate' ordinal='14' />
+            <column datatype='integer' name='Total Female Customers' ordinal='15' />
+            <column datatype='integer' name='Total Male Customers' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0yd4iz81o6s7vm1eli1s9195tnk7' name='DIM_CUSTOMER.csv' table='[DIM_CUSTOMER#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Year' ordinal='0' />
+              <column datatype='string' name='Quarter' ordinal='1' />
+              <column datatype='string' name='Month' ordinal='2' />
+              <column datatype='integer' name='Day' ordinal='3' />
+              <column datatype='string' name='COUNTRY' ordinal='4' />
+              <column datatype='integer' name='CUSTOMER_ID' ordinal='5' />
+              <column datatype='string' name='CUSTOMER_UNIQUE_KEY' ordinal='6' />
+              <column datatype='integer' name='Female %' ordinal='7' />
+              <column datatype='string' name='Full Name' ordinal='8' />
+              <column datatype='string' name='FIRST_NAME' ordinal='9' />
+              <column datatype='string' name='GENDER' ordinal='10' />
+              <column datatype='string' name='LAST_NAME' ordinal='11' />
+              <column datatype='integer' name='Male %' ordinal='12' />
+              <column datatype='integer' name='profit' ordinal='13' />
+              <column datatype='integer' name='Repeat Purchase Rate' ordinal='14' />
+              <column datatype='integer' name='Total Female Customers' ordinal='15' />
+              <column datatype='integer' name='Total Male Customers' ordinal='16' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0c6hds814618jp1bfjmqa0er7635' name='FACT_SALES.csv' table='[FACT_SALES#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='CUSTOMER_ID' ordinal='0' />
+              <column datatype='string' name='DUE_DATE_KEY' ordinal='1' />
+              <column datatype='string' name='ORDER_DATE_KEY' ordinal='2' />
+              <column datatype='string' name='ORDER_NUMBER' ordinal='3' />
+              <column datatype='integer' name='Sum of PRICE' ordinal='4' />
+              <column datatype='string' name='PRODUCT_KEY' ordinal='5' />
+              <column datatype='integer' name='Sum of QUANTITY' ordinal='6' />
+              <column datatype='integer' name='Sum of SALES' ordinal='7' />
+              <column datatype='string' name='SHIP_DATE_KEY' ordinal='8' />
+            </columns>
+          </relation>
+          <_.fcp.ObjectModelSharedDimensions.true...relation connection='textscan.0c6hds814618jp1bfjmqa0er7635' name='DIM_DATE.csv' table='[DIM_DATE#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='DATE_KEY' ordinal='0' />
+              <column datatype='integer' name='Year' ordinal='1' />
+              <column datatype='string' name='Quarter' ordinal='2' />
+              <column datatype='string' name='Month' ordinal='3' />
+              <column datatype='integer' name='Day' ordinal='4' />
+              <column datatype='integer' name='Sum of DAY' ordinal='5' />
+              <column datatype='integer' name='Sum of MONTH' ordinal='6' />
+              <column datatype='string' name='MONTH_NAME' ordinal='7' />
+              <column datatype='integer' name='Sum of QUARTER' ordinal='8' />
+              <column datatype='integer' name='Sum of YEAR' ordinal='9' />
+              <column datatype='string' name='DAY_NAME' ordinal='10' />
+            </columns>
+          </_.fcp.ObjectModelSharedDimensions.true...relation>
+          <_.fcp.ObjectModelSharedDimensions.true...relation connection='textscan.0c6hds814618jp1bfjmqa0er7635' name='DIM_PRODUCT.csv' table='[DIM_PRODUCT#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='CATEGORY' ordinal='0' />
+              <column datatype='string' name='MAINTENANCE' ordinal='1' />
+              <column datatype='string' name='PRODUCT_LINE' ordinal='2' />
+              <column datatype='string' name='PRODUCT_NAME' ordinal='3' />
+              <column datatype='string' name='PRODUCT_NUMBER' ordinal='4' />
+              <column datatype='integer' name='Count of PRODUCT_ID' ordinal='5' />
+              <column datatype='integer' name='Sum of PRODUCT_COST' ordinal='6' />
+              <column datatype='integer' name='Year' ordinal='7' />
+              <column datatype='string' name='Quarter' ordinal='8' />
+              <column datatype='string' name='Month' ordinal='9' />
+              <column datatype='integer' name='Day' ordinal='10' />
+              <column datatype='string' name='SUB_CATEGORY' ordinal='11' />
+            </columns>
+          </_.fcp.ObjectModelSharedDimensions.true...relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[CATEGORY]' value='[DIM_PRODUCT.csv].[CATEGORY]' />
+          <map key='[COUNTRY]' value='[DIM_CUSTOMER.csv].[COUNTRY]' />
+          <map key='[CUSTOMER_ID (FACT_SALES.csv)]' value='[FACT_SALES.csv].[CUSTOMER_ID]' />
+          <map key='[CUSTOMER_ID]' value='[DIM_CUSTOMER.csv].[CUSTOMER_ID]' />
+          <map key='[CUSTOMER_UNIQUE_KEY]' value='[DIM_CUSTOMER.csv].[CUSTOMER_UNIQUE_KEY]' />
+          <map key='[Count of PRODUCT_ID]' value='[DIM_PRODUCT.csv].[Count of PRODUCT_ID]' />
+          <map key='[DATE_KEY]' value='[DIM_DATE.csv].[DATE_KEY]' />
+          <map key='[DAY_NAME]' value='[DIM_DATE.csv].[DAY_NAME]' />
+          <map key='[DUE_DATE_KEY]' value='[FACT_SALES.csv].[DUE_DATE_KEY]' />
+          <map key='[Day (DIM_DATE.csv)]' value='[DIM_DATE.csv].[Day]' />
+          <map key='[Day (DIM_PRODUCT.csv)]' value='[DIM_PRODUCT.csv].[Day]' />
+          <map key='[Day]' value='[DIM_CUSTOMER.csv].[Day]' />
+          <map key='[FIRST_NAME]' value='[DIM_CUSTOMER.csv].[FIRST_NAME]' />
+          <map key='[Female %]' value='[DIM_CUSTOMER.csv].[Female %]' />
+          <map key='[Full Name]' value='[DIM_CUSTOMER.csv].[Full Name]' />
+          <map key='[GENDER]' value='[DIM_CUSTOMER.csv].[GENDER]' />
+          <map key='[LAST_NAME]' value='[DIM_CUSTOMER.csv].[LAST_NAME]' />
+          <map key='[MAINTENANCE]' value='[DIM_PRODUCT.csv].[MAINTENANCE]' />
+          <map key='[MONTH_NAME]' value='[DIM_DATE.csv].[MONTH_NAME]' />
+          <map key='[Male %]' value='[DIM_CUSTOMER.csv].[Male %]' />
+          <map key='[Month (DIM_DATE.csv)]' value='[DIM_DATE.csv].[Month]' />
+          <map key='[Month (DIM_PRODUCT.csv)]' value='[DIM_PRODUCT.csv].[Month]' />
+          <map key='[Month]' value='[DIM_CUSTOMER.csv].[Month]' />
+          <map key='[ORDER_DATE_KEY]' value='[FACT_SALES.csv].[ORDER_DATE_KEY]' />
+          <map key='[ORDER_NUMBER]' value='[FACT_SALES.csv].[ORDER_NUMBER]' />
+          <map key='[PRODUCT_KEY]' value='[FACT_SALES.csv].[PRODUCT_KEY]' />
+          <map key='[PRODUCT_LINE]' value='[DIM_PRODUCT.csv].[PRODUCT_LINE]' />
+          <map key='[PRODUCT_NAME]' value='[DIM_PRODUCT.csv].[PRODUCT_NAME]' />
+          <map key='[PRODUCT_NUMBER]' value='[DIM_PRODUCT.csv].[PRODUCT_NUMBER]' />
+          <map key='[Quarter (DIM_DATE.csv)]' value='[DIM_DATE.csv].[Quarter]' />
+          <map key='[Quarter (DIM_PRODUCT.csv)]' value='[DIM_PRODUCT.csv].[Quarter]' />
+          <map key='[Quarter]' value='[DIM_CUSTOMER.csv].[Quarter]' />
+          <map key='[Repeat Purchase Rate]' value='[DIM_CUSTOMER.csv].[Repeat Purchase Rate]' />
+          <map key='[SHIP_DATE_KEY]' value='[FACT_SALES.csv].[SHIP_DATE_KEY]' />
+          <map key='[SUB_CATEGORY]' value='[DIM_PRODUCT.csv].[SUB_CATEGORY]' />
+          <map key='[Sum of DAY]' value='[DIM_DATE.csv].[Sum of DAY]' />
+          <map key='[Sum of MONTH]' value='[DIM_DATE.csv].[Sum of MONTH]' />
+          <map key='[Sum of PRICE]' value='[FACT_SALES.csv].[Sum of PRICE]' />
+          <map key='[Sum of PRODUCT_COST]' value='[DIM_PRODUCT.csv].[Sum of PRODUCT_COST]' />
+          <map key='[Sum of QUANTITY]' value='[FACT_SALES.csv].[Sum of QUANTITY]' />
+          <map key='[Sum of QUARTER]' value='[DIM_DATE.csv].[Sum of QUARTER]' />
+          <map key='[Sum of SALES]' value='[FACT_SALES.csv].[Sum of SALES]' />
+          <map key='[Sum of YEAR]' value='[DIM_DATE.csv].[Sum of YEAR]' />
+          <map key='[Total Female Customers]' value='[DIM_CUSTOMER.csv].[Total Female Customers]' />
+          <map key='[Total Male Customers]' value='[DIM_CUSTOMER.csv].[Total Male Customers]' />
+          <map key='[Year (DIM_DATE.csv)]' value='[DIM_DATE.csv].[Year]' />
+          <map key='[Year (DIM_PRODUCT.csv)]' value='[DIM_PRODUCT.csv].[Year]' />
+          <map key='[Year]' value='[DIM_CUSTOMER.csv].[Year]' />
+          <map key='[profit]' value='[DIM_CUSTOMER.csv].[profit]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[FACT_SALES.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DIM_DATE.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quarter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Quarter]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>Quarter</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>Day</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTRY]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>COUNTRY</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CUSTOMER_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CUSTOMER_ID]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>CUSTOMER_ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CUSTOMER_UNIQUE_KEY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CUSTOMER_UNIQUE_KEY]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>CUSTOMER_UNIQUE_KEY</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Female %</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Female %]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>Female %</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Full Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Full Name]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>Full Name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIRST_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FIRST_NAME]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>FIRST_NAME</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GENDER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GENDER]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>GENDER</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAST_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LAST_NAME]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>LAST_NAME</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Male %</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Male %]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>Male %</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[profit]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>profit</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Repeat Purchase Rate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Repeat Purchase Rate]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>Repeat Purchase Rate</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Female Customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Female Customers]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>Total Female Customers</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Male Customers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Male Customers]</local-name>
+            <parent-name>[DIM_CUSTOMER.csv]</parent-name>
+            <remote-alias>Total Male Customers</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CUSTOMER_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CUSTOMER_ID (FACT_SALES.csv)]</local-name>
+            <parent-name>[FACT_SALES.csv]</parent-name>
+            <remote-alias>CUSTOMER_ID</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DUE_DATE_KEY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DUE_DATE_KEY]</local-name>
+            <parent-name>[FACT_SALES.csv]</parent-name>
+            <remote-alias>DUE_DATE_KEY</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORDER_DATE_KEY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ORDER_DATE_KEY]</local-name>
+            <parent-name>[FACT_SALES.csv]</parent-name>
+            <remote-alias>ORDER_DATE_KEY</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORDER_NUMBER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ORDER_NUMBER]</local-name>
+            <parent-name>[FACT_SALES.csv]</parent-name>
+            <remote-alias>ORDER_NUMBER</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum of PRICE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum of PRICE]</local-name>
+            <parent-name>[FACT_SALES.csv]</parent-name>
+            <remote-alias>Sum of PRICE</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRODUCT_KEY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRODUCT_KEY]</local-name>
+            <parent-name>[FACT_SALES.csv]</parent-name>
+            <remote-alias>PRODUCT_KEY</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum of QUANTITY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum of QUANTITY]</local-name>
+            <parent-name>[FACT_SALES.csv]</parent-name>
+            <remote-alias>Sum of QUANTITY</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum of SALES</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum of SALES]</local-name>
+            <parent-name>[FACT_SALES.csv]</parent-name>
+            <remote-alias>Sum of SALES</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SHIP_DATE_KEY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SHIP_DATE_KEY]</local-name>
+            <parent-name>[FACT_SALES.csv]</parent-name>
+            <remote-alias>SHIP_DATE_KEY</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>DATE_KEY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DATE_KEY]</local-name>
+            <parent-name>[DIM_DATE.csv]</parent-name>
+            <remote-alias>DATE_KEY</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (DIM_DATE.csv)]</local-name>
+            <parent-name>[DIM_DATE.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Quarter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Quarter (DIM_DATE.csv)]</local-name>
+            <parent-name>[DIM_DATE.csv]</parent-name>
+            <remote-alias>Quarter</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month (DIM_DATE.csv)]</local-name>
+            <parent-name>[DIM_DATE.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day (DIM_DATE.csv)]</local-name>
+            <parent-name>[DIM_DATE.csv]</parent-name>
+            <remote-alias>Day</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Sum of DAY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum of DAY]</local-name>
+            <parent-name>[DIM_DATE.csv]</parent-name>
+            <remote-alias>Sum of DAY</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Sum of MONTH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum of MONTH]</local-name>
+            <parent-name>[DIM_DATE.csv]</parent-name>
+            <remote-alias>Sum of MONTH</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>MONTH_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MONTH_NAME]</local-name>
+            <parent-name>[DIM_DATE.csv]</parent-name>
+            <remote-alias>MONTH_NAME</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Sum of QUARTER</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum of QUARTER]</local-name>
+            <parent-name>[DIM_DATE.csv]</parent-name>
+            <remote-alias>Sum of QUARTER</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Sum of YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum of YEAR]</local-name>
+            <parent-name>[DIM_DATE.csv]</parent-name>
+            <remote-alias>Sum of YEAR</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>DAY_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DAY_NAME]</local-name>
+            <parent-name>[DIM_DATE.csv]</parent-name>
+            <remote-alias>DAY_NAME</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>CATEGORY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CATEGORY]</local-name>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias>CATEGORY</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>MAINTENANCE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MAINTENANCE]</local-name>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias>MAINTENANCE</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>PRODUCT_LINE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRODUCT_LINE]</local-name>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias>PRODUCT_LINE</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>PRODUCT_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRODUCT_NAME]</local-name>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias>PRODUCT_NAME</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>PRODUCT_NUMBER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRODUCT_NUMBER]</local-name>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias>PRODUCT_NUMBER</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Count of PRODUCT_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count of PRODUCT_ID]</local-name>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias>Count of PRODUCT_ID</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Sum of PRODUCT_COST</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum of PRODUCT_COST]</local-name>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias>Sum of PRODUCT_COST</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (DIM_PRODUCT.csv)]</local-name>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Quarter</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Quarter (DIM_PRODUCT.csv)]</local-name>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias>Quarter</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month (DIM_PRODUCT.csv)]</local-name>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias>Month</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>Day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day (DIM_PRODUCT.csv)]</local-name>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias>Day</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+          <_.fcp.ObjectModelSharedDimensions.true...metadata-record class='column'>
+            <remote-name>SUB_CATEGORY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUB_CATEGORY]</local-name>
+            <parent-name>[DIM_PRODUCT.csv]</parent-name>
+            <remote-alias>SUB_CATEGORY</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </_.fcp.ObjectModelSharedDimensions.true...metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Category' datatype='string' name='[CATEGORY]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='CUSTOMER ID (FACT SALES.csv)' datatype='integer' name='[CUSTOMER_ID (FACT_SALES.csv)]' role='dimension' type='ordinal' />
+      <column caption='Customer Id' datatype='integer' name='[CUSTOMER_ID]' role='dimension' type='ordinal' />
+      <column caption='Customer Unique Key' datatype='string' name='[CUSTOMER_UNIQUE_KEY]' role='dimension' type='nominal' />
+      <column caption='CY Sales' datatype='integer' name='[Calculation_148900322004070400]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF ([Year (DIM_DATE.csv)])=2023 THEN [Sum of SALES]&#13;&#10;END' />
+      </column>
+      <column caption='Number Products' datatype='integer' name='[Count of PRODUCT_ID]' role='measure' type='quantitative' />
+      <column caption='Date Key' datatype='string' name='[DATE_KEY]' role='dimension' type='nominal' />
+      <column caption='Day Name' datatype='string' name='[DAY_NAME]' role='dimension' type='nominal' />
+      <column caption='Due Date Key' datatype='string' name='[DUE_DATE_KEY]' role='dimension' type='nominal' />
+      <column caption='Day (DIM DATE.csv)' datatype='integer' name='[Day (DIM_DATE.csv)]' role='dimension' type='quantitative' />
+      <column caption='Day (DIM PRODUCT.csv)' datatype='integer' name='[Day (DIM_PRODUCT.csv)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Day]' role='dimension' type='quantitative' />
+      <column caption='First Name' datatype='string' name='[FIRST_NAME]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[GENDER]' role='dimension' type='nominal' />
+      <column caption='Last Name' datatype='string' name='[LAST_NAME]' role='dimension' type='nominal' />
+      <column caption='Maintenance' datatype='string' name='[MAINTENANCE]' role='dimension' type='nominal' />
+      <column caption='Month Name' datatype='string' name='[MONTH_NAME]' role='dimension' type='nominal' />
+      <column caption='Month (DIM DATE.csv)' datatype='string' name='[Month (DIM_DATE.csv)]' role='dimension' type='nominal' />
+      <column caption='Month (DIM PRODUCT.csv)' datatype='string' name='[Month (DIM_PRODUCT.csv)]' role='dimension' type='nominal' />
+      <column caption='Order Date Key' datatype='string' name='[ORDER_DATE_KEY]' role='dimension' type='nominal' />
+      <column caption='Order Number' datatype='string' name='[ORDER_NUMBER]' role='dimension' type='nominal' />
+      <column caption='Product Key' datatype='string' name='[PRODUCT_KEY]' role='dimension' type='nominal' />
+      <column caption='Product Line' datatype='string' name='[PRODUCT_LINE]' role='dimension' type='nominal' />
+      <column caption='Product Name' datatype='string' name='[PRODUCT_NAME]' role='dimension' type='nominal' />
+      <column caption='Product Number' datatype='string' name='[PRODUCT_NUMBER]' role='dimension' type='nominal' />
+      <column caption='Quarter (DIM DATE.csv)' datatype='string' name='[Quarter (DIM_DATE.csv)]' role='dimension' type='nominal' />
+      <column caption='Quarter (DIM PRODUCT.csv)' datatype='string' name='[Quarter (DIM_PRODUCT.csv)]' role='dimension' type='nominal' />
+      <column caption='Ship Date Key' datatype='string' name='[SHIP_DATE_KEY]' role='dimension' type='nominal' />
+      <column caption='Sub Category' datatype='string' name='[SUB_CATEGORY]' role='dimension' type='nominal' />
+      <column caption='Total PRODUCT COST' datatype='integer' name='[Sum of PRODUCT_COST]' role='measure' type='quantitative' />
+      <column caption='Total  QUANTITY' datatype='integer' name='[Sum of QUANTITY]' role='measure' type='quantitative' />
+      <column caption='Total SALES' datatype='integer' name='[Sum of SALES]' role='measure' type='quantitative' />
+      <column caption='Year (DIM DATE.csv)' datatype='integer' name='[Year (DIM_DATE.csv)]' role='dimension' type='quantitative' />
+      <column caption='Year (DIM PRODUCT.csv)' datatype='integer' name='[Year (DIM_PRODUCT.csv)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='DIM_CUSTOMER.csv' datatype='table' name='[__tableau_internal_object_id__].[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='DIM_DATE.csv' datatype='table' name='[__tableau_internal_object_id__].[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='DIM_PRODUCT.csv' datatype='table' name='[__tableau_internal_object_id__].[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='FACT_SALES.csv' datatype='table' name='[__tableau_internal_object_id__].[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]' role='measure' type='quantitative' />
+      <column caption='Profit' datatype='integer' name='[profit]' role='measure' type='quantitative' />
+      <column-instance column='[CATEGORY]' derivation='None' name='[none:CATEGORY:nk]' pivot='key' type='nominal' />
+      <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+      <column-instance column='[GENDER]' derivation='None' name='[none:GENDER:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_148900322004070400]' derivation='Sum' name='[sum:Calculation_148900322004070400:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/DELL/AppData/Local/Temp/TableauTemp/#TableauTemp_0mnnh281ap1if512nvso704j1zk4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F' table='[Extract].[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F' table='[Extract].[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]' type='table' />
+            <relation name='FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423' table='[Extract].[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]' type='table' />
+            <_.fcp.ObjectModelSharedDimensions.true...relation name='DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853' table='[Extract].[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]' type='table' />
+            <_.fcp.ObjectModelSharedDimensions.true...relation name='DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46' table='[Extract].[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[CATEGORY]' value='[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46].[CATEGORY]' />
+            <map key='[COUNTRY]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[COUNTRY]' />
+            <map key='[CUSTOMER_ID (FACT_SALES.csv)]' value='[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423].[CUSTOMER_ID]' />
+            <map key='[CUSTOMER_ID]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[CUSTOMER_ID]' />
+            <map key='[CUSTOMER_UNIQUE_KEY]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[CUSTOMER_UNIQUE_KEY]' />
+            <map key='[Count of PRODUCT_ID]' value='[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46].[Count of PRODUCT_ID]' />
+            <map key='[DATE_KEY]' value='[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853].[DATE_KEY]' />
+            <map key='[DAY_NAME]' value='[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853].[DAY_NAME]' />
+            <map key='[DUE_DATE_KEY]' value='[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423].[DUE_DATE_KEY]' />
+            <map key='[Day (DIM_DATE.csv)]' value='[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853].[Day]' />
+            <map key='[Day (DIM_PRODUCT.csv)]' value='[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46].[Day]' />
+            <map key='[Day]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[Day]' />
+            <map key='[FIRST_NAME]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[FIRST_NAME]' />
+            <map key='[Female %]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[Female %]' />
+            <map key='[Full Name]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[Full Name]' />
+            <map key='[GENDER]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[GENDER]' />
+            <map key='[LAST_NAME]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[LAST_NAME]' />
+            <map key='[MAINTENANCE]' value='[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46].[MAINTENANCE]' />
+            <map key='[MONTH_NAME]' value='[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853].[MONTH_NAME]' />
+            <map key='[Male %]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[Male %]' />
+            <map key='[Month (DIM_DATE.csv)]' value='[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853].[Month]' />
+            <map key='[Month (DIM_PRODUCT.csv)]' value='[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46].[Month]' />
+            <map key='[Month]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[Month]' />
+            <map key='[ORDER_DATE_KEY]' value='[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423].[ORDER_DATE_KEY]' />
+            <map key='[ORDER_NUMBER]' value='[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423].[ORDER_NUMBER]' />
+            <map key='[PRODUCT_KEY]' value='[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423].[PRODUCT_KEY]' />
+            <map key='[PRODUCT_LINE]' value='[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46].[PRODUCT_LINE]' />
+            <map key='[PRODUCT_NAME]' value='[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46].[PRODUCT_NAME]' />
+            <map key='[PRODUCT_NUMBER]' value='[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46].[PRODUCT_NUMBER]' />
+            <map key='[Quarter (DIM_DATE.csv)]' value='[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853].[Quarter]' />
+            <map key='[Quarter (DIM_PRODUCT.csv)]' value='[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46].[Quarter]' />
+            <map key='[Quarter]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[Quarter]' />
+            <map key='[Repeat Purchase Rate]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[Repeat Purchase Rate]' />
+            <map key='[SHIP_DATE_KEY]' value='[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423].[SHIP_DATE_KEY]' />
+            <map key='[SUB_CATEGORY]' value='[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46].[SUB_CATEGORY]' />
+            <map key='[Sum of DAY]' value='[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853].[Sum of DAY]' />
+            <map key='[Sum of MONTH]' value='[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853].[Sum of MONTH]' />
+            <map key='[Sum of PRICE]' value='[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423].[Sum of PRICE]' />
+            <map key='[Sum of PRODUCT_COST]' value='[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46].[Sum of PRODUCT_COST]' />
+            <map key='[Sum of QUANTITY]' value='[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423].[Sum of QUANTITY]' />
+            <map key='[Sum of QUARTER]' value='[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853].[Sum of QUARTER]' />
+            <map key='[Sum of SALES]' value='[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423].[Sum of SALES]' />
+            <map key='[Sum of YEAR]' value='[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853].[Sum of YEAR]' />
+            <map key='[Total Female Customers]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[Total Female Customers]' />
+            <map key='[Total Male Customers]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[Total Male Customers]' />
+            <map key='[Year (DIM_DATE.csv)]' value='[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853].[Year]' />
+            <map key='[Year (DIM_PRODUCT.csv)]' value='[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46].[Year]' />
+            <map key='[Year]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[Year]' />
+            <map key='[profit]' value='[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F].[profit]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>77</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quarter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Quarter]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>Quarter</remote-alias>
+              <ordinal>1</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>2</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Day]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>Day</remote-alias>
+              <ordinal>3</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTRY]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>COUNTRY</remote-alias>
+              <ordinal>4</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CUSTOMER_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CUSTOMER_ID]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>CUSTOMER_ID</remote-alias>
+              <ordinal>5</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18484</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CUSTOMER_UNIQUE_KEY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CUSTOMER_UNIQUE_KEY]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>CUSTOMER_UNIQUE_KEY</remote-alias>
+              <ordinal>6</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18484</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Female %</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Female %]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>Female %</remote-alias>
+              <ordinal>7</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Full Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Full Name]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>Full Name</remote-alias>
+              <ordinal>8</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18484</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FIRST_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FIRST_NAME]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>FIRST_NAME</remote-alias>
+              <ordinal>9</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1069</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GENDER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GENDER]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>GENDER</remote-alias>
+              <ordinal>10</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LAST_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LAST_NAME]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>LAST_NAME</remote-alias>
+              <ordinal>11</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>354</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Male %</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Male %]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>Male %</remote-alias>
+              <ordinal>12</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>profit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[profit]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>profit</remote-alias>
+              <ordinal>13</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1662</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Repeat Purchase Rate</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Repeat Purchase Rate]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>Repeat Purchase Rate</remote-alias>
+              <ordinal>14</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Female Customers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Female Customers]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>Total Female Customers</remote-alias>
+              <ordinal>15</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Male Customers</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total Male Customers]</local-name>
+              <parent-name>[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]</parent-name>
+              <remote-alias>Total Male Customers</remote-alias>
+              <ordinal>16</ordinal>
+              <family>DIM_CUSTOMER.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CUSTOMER_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CUSTOMER_ID (FACT_SALES.csv)]</local-name>
+              <parent-name>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</parent-name>
+              <remote-alias>CUSTOMER_ID</remote-alias>
+              <ordinal>17</ordinal>
+              <family>FACT_SALES.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7597</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DUE_DATE_KEY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DUE_DATE_KEY]</local-name>
+              <parent-name>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</parent-name>
+              <remote-alias>DUE_DATE_KEY</remote-alias>
+              <ordinal>18</ordinal>
+              <family>FACT_SALES.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1218</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ORDER_DATE_KEY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ORDER_DATE_KEY]</local-name>
+              <parent-name>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</parent-name>
+              <remote-alias>ORDER_DATE_KEY</remote-alias>
+              <ordinal>19</ordinal>
+              <family>FACT_SALES.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1218</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ORDER_NUMBER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ORDER_NUMBER]</local-name>
+              <parent-name>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</parent-name>
+              <remote-alias>ORDER_NUMBER</remote-alias>
+              <ordinal>20</ordinal>
+              <family>FACT_SALES.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12492</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sum of PRICE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sum of PRICE]</local-name>
+              <parent-name>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</parent-name>
+              <remote-alias>Sum of PRICE</remote-alias>
+              <ordinal>21</ordinal>
+              <family>FACT_SALES.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PRODUCT_KEY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PRODUCT_KEY]</local-name>
+              <parent-name>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</parent-name>
+              <remote-alias>PRODUCT_KEY</remote-alias>
+              <ordinal>22</ordinal>
+              <family>FACT_SALES.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>212</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sum of QUANTITY</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sum of QUANTITY]</local-name>
+              <parent-name>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</parent-name>
+              <remote-alias>Sum of QUANTITY</remote-alias>
+              <ordinal>23</ordinal>
+              <family>FACT_SALES.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sum of SALES</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sum of SALES]</local-name>
+              <parent-name>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</parent-name>
+              <remote-alias>Sum of SALES</remote-alias>
+              <ordinal>24</ordinal>
+              <family>FACT_SALES.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>44</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SHIP_DATE_KEY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SHIP_DATE_KEY]</local-name>
+              <parent-name>[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]</parent-name>
+              <remote-alias>SHIP_DATE_KEY</remote-alias>
+              <ordinal>25</ordinal>
+              <family>FACT_SALES.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1218</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DATE_KEY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DATE_KEY]</local-name>
+              <parent-name>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</parent-name>
+              <remote-alias>DATE_KEY</remote-alias>
+              <ordinal>26</ordinal>
+              <family>DIM_DATE.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1139</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year (DIM_DATE.csv)]</local-name>
+              <parent-name>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>27</ordinal>
+              <family>DIM_DATE.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quarter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Quarter (DIM_DATE.csv)]</local-name>
+              <parent-name>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</parent-name>
+              <remote-alias>Quarter</remote-alias>
+              <ordinal>28</ordinal>
+              <family>DIM_DATE.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month (DIM_DATE.csv)]</local-name>
+              <parent-name>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>29</ordinal>
+              <family>DIM_DATE.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Day (DIM_DATE.csv)]</local-name>
+              <parent-name>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</parent-name>
+              <remote-alias>Day</remote-alias>
+              <ordinal>30</ordinal>
+              <family>DIM_DATE.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sum of DAY</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sum of DAY]</local-name>
+              <parent-name>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</parent-name>
+              <remote-alias>Sum of DAY</remote-alias>
+              <ordinal>31</ordinal>
+              <family>DIM_DATE.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sum of MONTH</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sum of MONTH]</local-name>
+              <parent-name>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</parent-name>
+              <remote-alias>Sum of MONTH</remote-alias>
+              <ordinal>32</ordinal>
+              <family>DIM_DATE.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MONTH_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MONTH_NAME]</local-name>
+              <parent-name>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</parent-name>
+              <remote-alias>MONTH_NAME</remote-alias>
+              <ordinal>33</ordinal>
+              <family>DIM_DATE.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sum of QUARTER</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sum of QUARTER]</local-name>
+              <parent-name>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</parent-name>
+              <remote-alias>Sum of QUARTER</remote-alias>
+              <ordinal>34</ordinal>
+              <family>DIM_DATE.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sum of YEAR</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sum of YEAR]</local-name>
+              <parent-name>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</parent-name>
+              <remote-alias>Sum of YEAR</remote-alias>
+              <ordinal>35</ordinal>
+              <family>DIM_DATE.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DAY_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DAY_NAME]</local-name>
+              <parent-name>[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]</parent-name>
+              <remote-alias>DAY_NAME</remote-alias>
+              <ordinal>36</ordinal>
+              <family>DIM_DATE.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CATEGORY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CATEGORY]</local-name>
+              <parent-name>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</parent-name>
+              <remote-alias>CATEGORY</remote-alias>
+              <ordinal>37</ordinal>
+              <family>DIM_PRODUCT.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MAINTENANCE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MAINTENANCE]</local-name>
+              <parent-name>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</parent-name>
+              <remote-alias>MAINTENANCE</remote-alias>
+              <ordinal>38</ordinal>
+              <family>DIM_PRODUCT.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PRODUCT_LINE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PRODUCT_LINE]</local-name>
+              <parent-name>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</parent-name>
+              <remote-alias>PRODUCT_LINE</remote-alias>
+              <ordinal>39</ordinal>
+              <family>DIM_PRODUCT.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PRODUCT_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PRODUCT_NAME]</local-name>
+              <parent-name>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</parent-name>
+              <remote-alias>PRODUCT_NAME</remote-alias>
+              <ordinal>40</ordinal>
+              <family>DIM_PRODUCT.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>295</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PRODUCT_NUMBER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PRODUCT_NUMBER]</local-name>
+              <parent-name>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</parent-name>
+              <remote-alias>PRODUCT_NUMBER</remote-alias>
+              <ordinal>41</ordinal>
+              <family>DIM_PRODUCT.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>295</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Count of PRODUCT_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Count of PRODUCT_ID]</local-name>
+              <parent-name>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</parent-name>
+              <remote-alias>Count of PRODUCT_ID</remote-alias>
+              <ordinal>42</ordinal>
+              <family>DIM_PRODUCT.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sum of PRODUCT_COST</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sum of PRODUCT_COST]</local-name>
+              <parent-name>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</parent-name>
+              <remote-alias>Sum of PRODUCT_COST</remote-alias>
+              <ordinal>43</ordinal>
+              <family>DIM_PRODUCT.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year (DIM_PRODUCT.csv)]</local-name>
+              <parent-name>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>44</ordinal>
+              <family>DIM_PRODUCT.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quarter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Quarter (DIM_PRODUCT.csv)]</local-name>
+              <parent-name>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</parent-name>
+              <remote-alias>Quarter</remote-alias>
+              <ordinal>45</ordinal>
+              <family>DIM_PRODUCT.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month (DIM_PRODUCT.csv)]</local-name>
+              <parent-name>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</parent-name>
+              <remote-alias>Month</remote-alias>
+              <ordinal>46</ordinal>
+              <family>DIM_PRODUCT.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Day (DIM_PRODUCT.csv)]</local-name>
+              <parent-name>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</parent-name>
+              <remote-alias>Day</remote-alias>
+              <ordinal>47</ordinal>
+              <family>DIM_PRODUCT.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SUB_CATEGORY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SUB_CATEGORY]</local-name>
+              <parent-name>[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]</parent-name>
+              <remote-alias>SUB_CATEGORY</remote-alias>
+              <ordinal>48</ordinal>
+              <family>DIM_PRODUCT.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Calculation_148900322004070400:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0iwao7s1lpxsi11fx12cv05erlub]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:COUNTRY:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;n/a&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:CATEGORY:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Accessories&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Components&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Clothing&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bikes&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:GENDER:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;n/a&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='DIM_CUSTOMER.csv' id='DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F'>
+            <properties context=''>
+              <relation connection='textscan.0yd4iz81o6s7vm1eli1s9195tnk7' name='DIM_CUSTOMER.csv' table='[DIM_CUSTOMER#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Quarter' ordinal='1' />
+                  <column datatype='string' name='Month' ordinal='2' />
+                  <column datatype='integer' name='Day' ordinal='3' />
+                  <column datatype='string' name='COUNTRY' ordinal='4' />
+                  <column datatype='integer' name='CUSTOMER_ID' ordinal='5' />
+                  <column datatype='string' name='CUSTOMER_UNIQUE_KEY' ordinal='6' />
+                  <column datatype='integer' name='Female %' ordinal='7' />
+                  <column datatype='string' name='Full Name' ordinal='8' />
+                  <column datatype='string' name='FIRST_NAME' ordinal='9' />
+                  <column datatype='string' name='GENDER' ordinal='10' />
+                  <column datatype='string' name='LAST_NAME' ordinal='11' />
+                  <column datatype='integer' name='Male %' ordinal='12' />
+                  <column datatype='integer' name='profit' ordinal='13' />
+                  <column datatype='integer' name='Repeat Purchase Rate' ordinal='14' />
+                  <column datatype='integer' name='Total Female Customers' ordinal='15' />
+                  <column datatype='integer' name='Total Male Customers' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F' table='[Extract].[DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F]' type='table' />
+            </properties>
+          </object>
+          <_.fcp.ObjectModelSharedDimensions.true...object caption='DIM_DATE.csv' id='DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853'>
+            <properties context=''>
+              <relation connection='textscan.0c6hds814618jp1bfjmqa0er7635' name='DIM_DATE.csv' table='[DIM_DATE#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='DATE_KEY' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='string' name='Quarter' ordinal='2' />
+                  <column datatype='string' name='Month' ordinal='3' />
+                  <column datatype='integer' name='Day' ordinal='4' />
+                  <column datatype='integer' name='Sum of DAY' ordinal='5' />
+                  <column datatype='integer' name='Sum of MONTH' ordinal='6' />
+                  <column datatype='string' name='MONTH_NAME' ordinal='7' />
+                  <column datatype='integer' name='Sum of QUARTER' ordinal='8' />
+                  <column datatype='integer' name='Sum of YEAR' ordinal='9' />
+                  <column datatype='string' name='DAY_NAME' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853' table='[Extract].[DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853]' type='table' />
+            </properties>
+          </_.fcp.ObjectModelSharedDimensions.true...object>
+          <_.fcp.ObjectModelSharedDimensions.true...object caption='DIM_PRODUCT.csv' id='DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46'>
+            <properties context=''>
+              <relation connection='textscan.0c6hds814618jp1bfjmqa0er7635' name='DIM_PRODUCT.csv' table='[DIM_PRODUCT#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='CATEGORY' ordinal='0' />
+                  <column datatype='string' name='MAINTENANCE' ordinal='1' />
+                  <column datatype='string' name='PRODUCT_LINE' ordinal='2' />
+                  <column datatype='string' name='PRODUCT_NAME' ordinal='3' />
+                  <column datatype='string' name='PRODUCT_NUMBER' ordinal='4' />
+                  <column datatype='integer' name='Count of PRODUCT_ID' ordinal='5' />
+                  <column datatype='integer' name='Sum of PRODUCT_COST' ordinal='6' />
+                  <column datatype='integer' name='Year' ordinal='7' />
+                  <column datatype='string' name='Quarter' ordinal='8' />
+                  <column datatype='string' name='Month' ordinal='9' />
+                  <column datatype='integer' name='Day' ordinal='10' />
+                  <column datatype='string' name='SUB_CATEGORY' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46' table='[Extract].[DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46]' type='table' />
+            </properties>
+          </_.fcp.ObjectModelSharedDimensions.true...object>
+          <object caption='FACT_SALES.csv' id='FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423'>
+            <properties context=''>
+              <relation connection='textscan.0c6hds814618jp1bfjmqa0er7635' name='FACT_SALES.csv' table='[FACT_SALES#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='CUSTOMER_ID' ordinal='0' />
+                  <column datatype='string' name='DUE_DATE_KEY' ordinal='1' />
+                  <column datatype='string' name='ORDER_DATE_KEY' ordinal='2' />
+                  <column datatype='string' name='ORDER_NUMBER' ordinal='3' />
+                  <column datatype='integer' name='Sum of PRICE' ordinal='4' />
+                  <column datatype='string' name='PRODUCT_KEY' ordinal='5' />
+                  <column datatype='integer' name='Sum of QUANTITY' ordinal='6' />
+                  <column datatype='integer' name='Sum of SALES' ordinal='7' />
+                  <column datatype='string' name='SHIP_DATE_KEY' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423' table='[Extract].[FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[CUSTOMER_ID]' />
+              <expression op='[CUSTOMER_ID (FACT_SALES.csv)]' />
+            </expression>
+            <first-end-point object-id='DIM_CUSTOMER.csv_80C40EB778A543498F6DA68CE90C5B1F' />
+            <second-end-point object-id='FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423' />
+          </relationship>
+          <_.fcp.ObjectModelSharedDimensions.true...relationship>
+            <expression op='='>
+              <expression op='[DATE_KEY]' />
+              <expression op='[DUE_DATE_KEY]' />
+            </expression>
+            <first-end-point object-id='DIM_DATE.csv_D10A3A75A7674CE5B8D0769206169853' />
+            <second-end-point object-id='FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423' />
+          </_.fcp.ObjectModelSharedDimensions.true...relationship>
+          <_.fcp.ObjectModelSharedDimensions.true...relationship>
+            <expression op='='>
+              <expression op='[PRODUCT_NUMBER]' />
+              <expression op='[PRODUCT_KEY]' />
+            </expression>
+            <first-end-point object-id='DIM_PRODUCT.csv_A517AA17DC9A415D83F93575078D8C46' />
+            <second-end-point object-id='FACT_SALES.csv_91DA55D9367F4468B776409B80DB6423' />
+          </_.fcp.ObjectModelSharedDimensions.true...relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Cards'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data Model' name='federated.0iwao7s1lpxsi11fx12cv05erlub' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iwao7s1lpxsi11fx12cv05erlub'>
+            <column caption='Number Products' datatype='integer' name='[Count of PRODUCT_ID]' role='measure' type='quantitative' />
+            <column caption='Total PRODUCT COST' datatype='integer' name='[Sum of PRODUCT_COST]' role='measure' type='quantitative' />
+            <column caption='Total  QUANTITY' datatype='integer' name='[Sum of QUANTITY]' role='measure' type='quantitative' />
+            <column caption='Total SALES' datatype='integer' name='[Sum of SALES]' role='measure' type='quantitative' />
+            <column caption='Profit' datatype='integer' name='[profit]' role='measure' type='quantitative' />
+            <column-instance column='[Count of PRODUCT_ID]' derivation='Sum' name='[sum:Count of PRODUCT_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sum of PRODUCT_COST]' derivation='Sum' name='[sum:Sum of PRODUCT_COST:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sum of QUANTITY]' derivation='Sum' name='[sum:Sum of QUANTITY:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sum of SALES]' derivation='Sum' name='[sum:Sum of SALES:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[profit]' derivation='Sum' name='[sum:profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Count of PRODUCT_ID:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:profit:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of PRODUCT_COST:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of QUANTITY:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of SALES:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0iwao7s1lpxsi11fx12cv05erlub].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='text-format' field='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:profit:qk]' value='n&quot;$&quot;#,##0,,.0M;-&quot;$&quot;#,##0,,.0M' />
+            <format attr='text-format' field='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of SALES:qk]' value='n&quot;$&quot;#,##0,,.0M;-&quot;$&quot;#,##0,,.0M' />
+            <format attr='border-width' value='2' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='text-format' field='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of QUANTITY:qk]' value='n#,##0,.00K;-#,##0,.00K' />
+            <format attr='text-format' field='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of PRODUCT_COST:qk]' value='n#,##0,.00K;-#,##0,.00K' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0iwao7s1lpxsi11fx12cv05erlub].[:Measure Names]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[Multiple Values]' />
+              <text column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[:Measure Names]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.0iwao7s1lpxsi11fx12cv05erlub].[Multiple Values]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.0iwao7s1lpxsi11fx12cv05erlub].[:Measure Names]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0iwao7s1lpxsi11fx12cv05erlub].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{6054AF6F-2FD9-4840-B935-A228B0A5B485}' />
+    </worksheet>
+    <worksheet name='Category_Sales'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Category_Sales</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data Model' name='federated.0iwao7s1lpxsi11fx12cv05erlub' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iwao7s1lpxsi11fx12cv05erlub'>
+            <column caption='Category' datatype='string' name='[CATEGORY]' role='dimension' type='nominal' />
+            <column caption='Total SALES' datatype='integer' name='[Sum of SALES]' role='measure' type='quantitative' />
+            <column-instance column='[CATEGORY]' derivation='None' name='[none:CATEGORY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sum of SALES]' derivation='Sum' name='[sum:Sum of SALES:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of SALES:qk]' included-values='in-range'>
+            <min>293163</min>
+            <max>23339363</max>
+          </filter>
+          <slices>
+            <column>[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of SALES:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:CATEGORY:nk]' />
+              <lod column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of SALES:qk]' />
+              <text column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of SALES:qk]' />
+              <text column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:CATEGORY:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.93353593349456787' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{29CE55B2-BC4F-4C99-BDB5-D0F27775FCBC}' />
+    </worksheet>
+    <worksheet name='Months Profit'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Months Profit</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data Model' name='federated.0iwao7s1lpxsi11fx12cv05erlub' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iwao7s1lpxsi11fx12cv05erlub'>
+            <column datatype='string' name='[Month]' role='dimension' type='nominal' />
+            <column-instance column='[Month]' derivation='None' name='[none:Month:nk]' pivot='key' type='nominal' />
+            <column caption='Profit' datatype='integer' name='[profit]' role='measure' type='quantitative' />
+            <column-instance column='[profit]' derivation='Sum' name='[sum:profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:Month:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Month:nk]' />
+              <groupfilter function='member' level='[none:Month:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:Month:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:Month:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:profit:qk]</rows>
+        <cols>[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:Month:nk]</cols>
+      </table>
+      <simple-id uuid='{3125B959-0721-47F0-91CE-8B94142840A3}' />
+    </worksheet>
+    <worksheet name='Profit By Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Map</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data Model' name='federated.0iwao7s1lpxsi11fx12cv05erlub' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0iwao7s1lpxsi11fx12cv05erlub'>
+            <column caption='Country' datatype='string' name='[COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[COUNTRY]' derivation='None' name='[none:COUNTRY:nk]' pivot='key' type='nominal' />
+            <column caption='Profit' datatype='integer' name='[profit]' role='measure' type='quantitative' />
+            <column-instance column='[profit]' derivation='Sum' name='[sum:profit:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:COUNTRY:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:COUNTRY:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:COUNTRY:nk]' member='&quot;n/a&quot;' />
+                <groupfilter function='member' level='[none:COUNTRY:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:COUNTRY:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <text column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:profit:qk]' />
+              <text column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:COUNTRY:nk]' />
+              <geometry column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0iwao7s1lpxsi11fx12cv05erlub].[Latitude (generated)]</rows>
+        <cols>[federated.0iwao7s1lpxsi11fx12cv05erlub].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{B6A82BA6-321C-4324-8223-BD69A6657119}' />
+    </worksheet>
+    <worksheet name='Quantity By Category '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Quantity By Category </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data Model' name='federated.0iwao7s1lpxsi11fx12cv05erlub' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0iwao7s1lpxsi11fx12cv05erlub'>
+            <column caption='Category' datatype='string' name='[CATEGORY]' role='dimension' type='nominal' />
+            <column caption='Total  QUANTITY' datatype='integer' name='[Sum of QUANTITY]' role='measure' type='quantitative' />
+            <column-instance column='[CATEGORY]' derivation='None' name='[none:CATEGORY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sum of QUANTITY]' derivation='Sum' name='[sum:Sum of QUANTITY:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:CATEGORY:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:CATEGORY:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:CATEGORY:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:CATEGORY:nk]' member='&quot;Components&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:CATEGORY:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of QUANTITY:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of QUANTITY:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of QUANTITY:qk]' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:CATEGORY:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of QUANTITY:qk]</rows>
+        <cols>[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:CATEGORY:nk]</cols>
+      </table>
+      <simple-id uuid='{EEC150BE-E8EB-4B94-A979-8A7C923A4E02}' />
+    </worksheet>
+    <worksheet name='Total Sales By Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Total Sales By Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data Model' name='federated.0iwao7s1lpxsi11fx12cv05erlub' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iwao7s1lpxsi11fx12cv05erlub'>
+            <column caption='Total SALES' datatype='integer' name='[Sum of SALES]' role='measure' type='quantitative' />
+            <column caption='Year (DIM DATE.csv)' datatype='integer' name='[Year (DIM_DATE.csv)]' role='dimension' type='quantitative' />
+            <column-instance column='[Year (DIM_DATE.csv)]' derivation='None' name='[none:Year (DIM_DATE.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sum of SALES]' derivation='Sum' name='[sum:Sum of SALES:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:Year (DIM_DATE.csv):qk]' included-values='in-range'>
+            <min>2010</min>
+            <max>2014</max>
+          </filter>
+          <slices>
+            <column>[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:Year (DIM_DATE.csv):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of SALES:qk]</rows>
+        <cols>[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:Year (DIM_DATE.csv):qk]</cols>
+      </table>
+      <simple-id uuid='{756FCF21-4D22-4720-BAD0-12040CBE8BBA}' />
+    </worksheet>
+    <worksheet name='gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data Model' name='federated.0iwao7s1lpxsi11fx12cv05erlub' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iwao7s1lpxsi11fx12cv05erlub'>
+            <column datatype='integer' name='[Female %]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[GENDER]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Male %]' role='measure' type='quantitative' />
+            <column-instance column='[GENDER]' derivation='None' name='[none:GENDER:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Female %]' derivation='Sum' name='[sum:Female %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Male %]' derivation='Sum' name='[sum:Male %:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:GENDER:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:GENDER:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:GENDER:nk]' member='&quot;n/a&quot;' />
+                <groupfilter function='member' level='[none:GENDER:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:GENDER:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:GENDER:nk]' />
+              <text column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Male %:qk]' />
+              <text column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:GENDER:nk]' />
+              <text column='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Female %:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B6178936-DA87-4F08-8DE2-165A242252F0}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size minheight='560' minwidth='700' sizing-mode='range' />
+      <datasources>
+        <datasource caption='Data Model' name='federated.0iwao7s1lpxsi11fx12cv05erlub' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0iwao7s1lpxsi11fx12cv05erlub'>
+        <column caption='Total SALES' datatype='integer' name='[Sum of SALES]' role='measure' type='quantitative' />
+        <column-instance column='[Sum of SALES]' derivation='Sum' name='[sum:Sum of SALES:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97142' id='8' param='vert' type-v2='layout-flow' w='98596' x='702' y='1429'>
+            <zone h='97142' id='9' type-v2='layout-basic' w='98596' x='702' y='1429' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='17857' id='11' name='Cards' show-title='false' w='89025' x='3863' y='2143' />
+        <zone h='48929' id='12' name='Category_Sales' w='25373' x='966' y='25000' />
+        <zone h='10893' id='13' name='Category_Sales' param='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of SALES:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='14047' x='12379' y='76786' />
+        <zone h='13929' id='14' name='Category_Sales' pane-specification-id='2' param='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:CATEGORY:nk]' type-v2='color' w='10711' x='702' y='75357' />
+        <zone h='72500' id='15' name='Profit By Country' w='40825' x='57770' y='22857' />
+        <zone h='73571' id='16' name='Quantity By Category ' w='26514' x='26427' y='21607' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1'>Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97142' id='23' param='vert' type-v2='layout-flow' w='98596' x='702' y='1429'>
+                <zone fixed-size='100' h='17857' id='11' is-fixed='true' name='Cards' show-title='false' w='89025' x='3863' y='2143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='73571' id='16' is-fixed='true' name='Quantity By Category ' w='26514' x='26427' y='21607'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='72500' id='15' is-fixed='true' name='Profit By Country' w='40825' x='57770' y='22857'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10893' id='13' name='Category_Sales' param='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of SALES:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='14047' x='12379' y='76786'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='274' h='48929' id='12' is-fixed='true' name='Category_Sales' w='25373' x='966' y='25000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='13929' id='14' name='Category_Sales' pane-specification-id='2' param='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:CATEGORY:nk]' type-v2='color' w='10711' x='702' y='75357'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DF5E420B-C98C-4669-AFCC-6005360DAF29}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size minheight='560' minwidth='700' sizing-mode='range' />
+      <zones>
+        <zone h='81071' id='3' name='Total Sales By Year' w='40737' x='1932' y='11429' />
+        <zone h='63929' id='4' name='gender' w='40386' x='43547' y='21071' />
+        <zone h='20714' id='5' name='gender' pane-specification-id='0' param='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:GENDER:nk]' type-v2='color' w='12291' x='85689' y='44286' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='13' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97142' id='12' param='vert' type-v2='layout-flow' w='98596' x='702' y='1429'>
+                <zone fixed-size='280' h='81071' id='3' is-fixed='true' name='Total Sales By Year' w='40737' x='1932' y='11429'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='63929' id='4' is-fixed='true' name='gender' w='40386' x='43547' y='21071'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='20714' id='5' name='gender' pane-specification-id='0' param='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:GENDER:nk]' type-v2='color' w='12291' x='85689' y='44286'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A05CB885-E5A5-47F1-B7D4-4E085D2B7CFF}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Category_Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0iwao7s1lpxsi11fx12cv05erlub].[sum:Sum of SALES:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='2' param='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:CATEGORY:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B99DD523-B65B-489C-8CA0-0E73B6B677F5}' />
+    </window>
+    <window class='worksheet' name='Profit By Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='100'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='115'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{57FDB619-9F84-44BD-A001-41785CE08F47}' />
+    </window>
+    <window class='worksheet' name='gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:GENDER:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A227D867-B578-46BD-927C-8683EE0D6B28}' />
+    </window>
+    <window class='worksheet' name='Quantity By Category '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:CATEGORY:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1B6AD74B-50C6-4A1F-8144-5F6FA8B5B8E2}' />
+    </window>
+    <window class='worksheet' name='Months Profit'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0iwao7s1lpxsi11fx12cv05erlub].[none:Month:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CF8B9C20-3207-4070-BD09-EB6FF2049C60}' />
+    </window>
+    <window class='worksheet' name='Total Sales By Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3FB2742A-C91C-47FE-8BB8-3AC3B6F18774}' />
+    </window>
+    <window class='worksheet' name='Cards'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2D6734D3-1DE8-4992-9B53-9ECF5A75746C}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Cards'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Category_Sales'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Profit By Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quantity By Category '>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{7D8C7481-8900-49CC-BBDE-5C3FB6871FA4}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Total Sales By Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='gender'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5F7D8209-F372-4DCD-9AE4-03C0672A48DA}' />
+    </window>
+  </windows>
+</workbook>

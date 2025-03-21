@@ -1,0 +1,27 @@
+
+name: 'sales'
+version: '1.0.0'
+
+profile: 'sales'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:        
+  - "target"
+  - "dbt_packages"
+
+
+models:
+  sales:
+    silver_layer:
+      schema: silver  
+      materialized: incremental
+
+    Gold_layer:
+      materialized: incremental
+      schema: gold
